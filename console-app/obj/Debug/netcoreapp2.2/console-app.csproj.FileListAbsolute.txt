@@ -1,0 +1,11 @@
+/home/ernie/Newvec/AspNet/console-app/bin/Debug/netcoreapp2.2/console-app.deps.json
+/home/ernie/Newvec/AspNet/console-app/bin/Debug/netcoreapp2.2/console-app.runtimeconfig.json
+/home/ernie/Newvec/AspNet/console-app/bin/Debug/netcoreapp2.2/console-app.runtimeconfig.dev.json
+/home/ernie/Newvec/AspNet/console-app/bin/Debug/netcoreapp2.2/console-app.dll
+/home/ernie/Newvec/AspNet/console-app/bin/Debug/netcoreapp2.2/console-app.pdb
+/home/ernie/Newvec/AspNet/console-app/obj/Debug/netcoreapp2.2/console-app.csprojAssemblyReference.cache
+/home/ernie/Newvec/AspNet/console-app/obj/Debug/netcoreapp2.2/console-app.csproj.CoreCompileInputs.cache
+/home/ernie/Newvec/AspNet/console-app/obj/Debug/netcoreapp2.2/console-app.AssemblyInfoInputs.cache
+/home/ernie/Newvec/AspNet/console-app/obj/Debug/netcoreapp2.2/console-app.AssemblyInfo.cs
+/home/ernie/Newvec/AspNet/console-app/obj/Debug/netcoreapp2.2/console-app.dll
+/home/ernie/Newvec/AspNet/console-app/obj/Debug/netcoreapp2.2/console-app.pdb
