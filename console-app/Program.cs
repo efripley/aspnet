@@ -6,7 +6,7 @@ namespace console_app
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("My First App in .Net Core!");
         }
     }
 }
