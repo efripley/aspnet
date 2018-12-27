@@ -8,7 +8,33 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App"/>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0"/>
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0"/>
   </ItemGroup>
 
+  <ItemGroup>
+    <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.2.281"/>
+    <DotNetCliToolReference Include="Microsoft.AspNetCore.Razor.Tools" Version="1.0.0-preview4-final"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views" CopyToPublishDirectory="PreserveNewest"/>
+  </ItemGroup>
+
+  <Target Name="PreCompileTarget" BeforeTargets="Build">
+    <Exec Command="dotnet bundle"/>
+  </Target>
+
+  <Target Name="PrePublishTarget" BeforeTargets="Publish">
+    <Exec Command="bower install"/>
+  </Target>
 </Project>
