@@ -1,5 +1,31 @@
 @page
-@model CreateModel
+@model CrudBookSite.Pages.BookList.CreateModel
 @{
-
+    ViewData["Title"] = "Create";
 }
+
+<br/>
+<h2>Create Book</h2>
+<br/>
+
+<div style="border: 1px solid #bbb9b9; border-radius: 10px;">
+    <form method="post">
+        <div style="padding: 30px;">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label asp-for="Book.Name"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="Book.Name" class="form-control"/>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit" value="create" class="btn btn-primary btn-small"/>
+                <a asp-page="Index" class="btn btn-success btn-small">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>

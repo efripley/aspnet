@@ -15,7 +15,7 @@ namespace CrudBookSite.Pages.BookList{
         }
 
        [BindProperty] 
-        public Book book {get; set;}
+        public Book Book {get; set;}
         public void OnGet(){
 
         }
@@ -25,7 +25,7 @@ namespace CrudBookSite.Pages.BookList{
                 return Page();
             }
 
-            _db.Books.Add(book);
+            _db.Books.Add(Book);
 
             await _db.SaveChangesAsync();
             return RedirectToPage("Index");
